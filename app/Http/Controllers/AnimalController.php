@@ -14,27 +14,6 @@ class AnimalController extends Controller
     public function create()
     {
         Animal::create([
-            'name' => 'Bella',
-            'species' => 'Chien',
-            'age' => 5,
-            'desc' => 'Une labrador joueuse et affectueuse qui adore la compagnie.',
-            "photo" => "bella.jpg",
-        ]);
-        Animal::create([
-            'name' => 'Luna',
-            'species' => 'Chat',
-            'age' => 3,
-            'desc' => 'Une chatte calme et câline qui aime les endroits tranquilles.',
-            "photo" => "luna.jpg",
-        ]);
-        Animal::create([
-            'name' => 'Max',
-            'species' => 'Chien',
-            'age' => 2,
-            'desc' => 'Un jeune chiot plein d’énergie qui adore courir et jouer dehors.',
-            "photo" => "max.jpg",
-        ]);
-        Animal::create([
             'name' => 'Coquillette',
             'species' => 'Chien',
             'age' => 3,
@@ -49,10 +28,7 @@ class AnimalController extends Controller
             return 'Animal avec id ' . $id . ' non trouvé donc non modifiable';
         }
         $animal->update([
-            'name' => 'Nom Modifié',
-            'species' => 'Espèce Modifiée',
-            'age' => 4,
-            'desc' => 'Description Modifiée',
+            'name' => $animal->name . ' Nom Modifié',
         ]);
         return "Animal " . $id . " mis à jour avec succès.";
     }

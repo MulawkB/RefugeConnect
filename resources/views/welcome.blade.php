@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title' , 'Accueil')
 @section('content')
+    <h1>Nos animaux</h1>
     @foreach ($animals as $animal)
     @if ($loop->last)
         @break

@@ -1,3 +1,3 @@
 <footer>
-    <p>2025 - Refuge Connect</p>
+    <p> {{ date("Y") }} - Refuge Connect</p>
 </footer>
