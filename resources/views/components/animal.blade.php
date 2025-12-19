@@ -1,8 +1,8 @@
 <div>
     <h2>{{ $name }}</h2>
-    <p>Species: {{ $species }}</p>
-    <p>Age: {{ $age }}</p>
-    <p>Description: {{ $desc }}</p>
+    <p>Espèce: {{ $species }}</p>
+    <p>Âge: {{ $age }} ans</p>
+    <p>{{ $desc }}</p>
     <img rel="icon" type="image/png" alt="{{ $species }}" src="{{ asset('images/' . $image) }}">
     <button type="button">Modifier</button>
     <button type="button">Supprimer</button>
